@@ -1,0 +1,40 @@
+<html>
+    <head>
+            <script>
+                    function OpenTab()
+                    {
+                        document.getElementById("Win_dow").setAttribute("src",document.getElementById("T1").value);
+                    }
+                    function new_size()
+                    {
+                        document.getElementById("Win_dow").setAttribute("height",document.getElementById("H").value);
+                        document.getElementById("Win_dow").setAttribute("width",document.getElementById("W").value);
+                    }
+                </script>
+                <style> 
+                    div {
+                      border: 1px solid; 
+                      resize: both;
+                      padding-right: 5px;
+                      overflow: hidden;
+                     
+                    }
+                    </style>
+    </head>
+    <body>
+        <center>
+            <div style="width:400px;height:300px">
+        <iframe id="Win_dow" src="https://www.bing.com" width=99% height=99%></iframe>
+    </div>
+        <br><br>
+        Enter URL (<i> e.g. https://www.wikipedia.com</i>)<input id="T1" type="text" value="https://"> 
+        <input type="button" value="Submit" onclick="OpenTab();">
+        <br><br>
+        Enter Height<input id="H" type="text"><br>
+        Enter Width &nbsp<input id="W" type="text"> <br>
+        <input type="button" value="Resize" onclick="new_size();">
+        </center>
+    </body>
+
+
+</html>
